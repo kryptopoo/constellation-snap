@@ -64,14 +64,14 @@ const Index = () => {
     }
   }, [isMetaMaskReady, installedSnap, wallet?.config.network]);
 
-  // useEffect(() => {
-  //   if (onboardDone && isMetaMaskReady && installedSnap) {
-  //     setInterval(() => {
-  //       console.log('interval loadBalanceAndAssets');
-  //       loadBalanceAndAssets();
-  //     }, 4000);
-  //   }
-  // }, []);
+  useEffect(() => {
+    if (onboardDone && isMetaMaskReady && installedSnap) {
+      setInterval(() => {
+        console.log('interval loadBalanceAndAssets');
+        loadBalanceAndAssets();
+      }, 4000);
+    }
+  }, ['']);
 
   // useEffect(() => {
   //   const walletStore = getLocalStorage('wallet');
@@ -144,9 +144,9 @@ const Index = () => {
         overlayProps={{ radius: 'md', blur: 2 }}
         loaderProps={{ type: 'bars' }}
       />
-
+{/* 
       <Button onClick={() => requestSnap()}>Reconnect</Button>
-      <Button onClick={() => loadBalanceAndAssets()}>Balance</Button>
+      <Button onClick={() => loadBalanceAndAssets()}>Balance</Button> */}
 
       <OnboardingModal
         opened={onboardModalOpened}
