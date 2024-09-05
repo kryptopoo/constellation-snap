@@ -1,4 +1,4 @@
-import { Alert, Button, Divider, Modal, NumberInput, rem, Stack, Text, TextInput, Title } from '@mantine/core';
+import { Alert, Button, Divider, Modal, NumberInput, rem, Stack, Text, TextInput } from '@mantine/core';
 import { notifications } from '@mantine/notifications';
 import { IconInfoCircle } from '@tabler/icons-react';
 import { useEffect, useState } from 'react';
@@ -16,7 +16,6 @@ export const SendModal = ({
   close,
   asset = { symbol: 'DAG', icon: 'https://stargazer-assets.s3.us-east-2.amazonaws.com/logos/dag.png' } as Asset,
 }: SendModalProps) => {
-  // const [symbol, setSymbol] =  useState('DAG');
   const [amount, setAmount] = useState(0);
   const [receipient, setReceipient] = useState('');
   const requestSnap = useRequestSnap();
@@ -34,7 +33,6 @@ export const SendModal = ({
           metagraphId: asset.id,
         },
       }).then((res) => {
-        console.log(`transfer res`, res);
 
         close();
         setAmount(0);
@@ -83,17 +81,7 @@ export const SendModal = ({
   };
 
   return (
-    <Modal
-      size="md"
-      opened={opened}
-      onClose={close}
-      title="Send"
-      centered
-      // overlayProps={{
-      //   backgroundOpacity: 0.6,
-      //   blur: 3,
-      // }}
-    >
+    <Modal size="md" opened={opened} onClose={close} title="Send" centered>
       <Divider mb="md"></Divider>
       <Stack gap="xs">
         <NumberInput

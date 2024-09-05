@@ -1,25 +1,8 @@
-import {
-  Box,
-  Button,
-  Card,
-  Container,
-  CopyButton,
-  Divider,
-  Flex,
-  Group,
-  Paper,
-  Stack,
-  Text,
-  Tooltip,
-  Transition,
-  UnstyledButton,
-} from '@mantine/core';
+import { Button, Card, CopyButton, Divider, Flex, Group, Stack, Text, ActionIcon, rem } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
+import { IconCheck, IconCopy, IconQrcode } from '@tabler/icons-react';
 import { SendModal } from './SendModal';
 import { ReceiveModal } from './ReceiveModal';
-
-import { ActionIcon, rem } from '@mantine/core';
-import { IconCheck, IconCopy, IconQrcode } from '@tabler/icons-react';
 import { shortAddress } from '../utils';
 
 type PortfolioHeaderProps = {

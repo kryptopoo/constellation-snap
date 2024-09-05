@@ -1,13 +1,19 @@
-export type GetSnapsResponse = Record<string, Snap>;
-
-export type Snap = {
-  permissionName: string;
+export type NetworkInfo = {
   id: string;
-  version: string;
-  initialPermissions: Record<string, unknown>;
+  beUrl?: string;
+  lbUrl?: string;
+  l0Url?: string;
+  l1Url?: string;
+  networkVersion?: string;
+  testnet?: boolean;
 };
 
-// types reused from snap
+export enum Networks {
+  TestNet,
+  MainNet,
+  IntegrationNet,
+}
+
 export type WalletSnapState = {
   account: Account;
   config: Config;
@@ -48,16 +54,18 @@ export type Metagraph = {
   metagraphSiteUrl: string;
   metagraphFeesWalletAddress: string;
   metagraphStakingWalletAddress: string;
-};
-
-export type Transaction = {
-  amount: number;
-  fee: number;
-  hash: string;
-  ordinal: number;
-  pending: boolean;
-  sender: string;
-  receiver: string;
-  status: string;
-  timestamp: number;
+  metagraphNodes: {
+    l0: {
+      url: string;
+      nodes: number;
+    };
+    cl1: {
+      url: string;
+      nodes: number;
+    };
+    dl1: {
+      url: string;
+      nodes: number;
+    };
+  };
 };

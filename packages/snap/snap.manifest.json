@@ -1,0 +1,28 @@
+{
+  "version": "0.1.0",
+  "description": "An example Snap written in TypeScript.",
+  "proposedName": "Constellation Snap",
+  "source": {
+    "shasum": "wVIS5O0Sh5+pjV7vF10cY2jquUu/8Tbfs27ptePtXXE=",
+    "location": {
+      "npm": {
+        "filePath": "dist/bundle.js",
+        "packageName": "@constellation/snap",
+        "registry": "https://registry.npmjs.org/"
+      }
+    }
+  },
+  "initialPermissions": {
+    "snap_dialog": {},
+    "snap_getEntropy": {},
+    "endowment:rpc": {
+      "dapps": true,
+      "snaps": true
+    },
+    "endowment:network-access": {},
+    "endowment:ethereum-provider": {},
+    "snap_manageState": {},
+    "endowment:page-home": {}
+  },
+  "manifestVersion": "0.1"
+}

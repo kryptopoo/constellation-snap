@@ -1,18 +1,4 @@
-import {
-  Alert,
-  Badge,
-  Box,
-  Button,
-  Card,
-  Container,
-  Divider,
-  Flex,
-  FocusTrap,
-  Image,
-  Modal,
-  Skeleton,
-  Text,
-} from '@mantine/core';
+import { Alert, Box, Button, Divider, FocusTrap, Modal, Skeleton, Text } from '@mantine/core';
 import { IconInfoCircle, IconWallet, IconUserCheck, IconUserCircle } from '@tabler/icons-react';
 import { useState } from 'react';
 import { Stepper, Group } from '@mantine/core';
@@ -41,8 +27,6 @@ export const OnboardingModal = ({ opened, close }: { opened: boolean; close: () 
         network: network.toLowerCase(),
       },
     })) as WalletSnapState;
-
-    console.log('createWallet', wallet);
 
     setWallet(wallet);
   };

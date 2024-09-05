@@ -9,13 +9,11 @@ export type WalletContextContent = {
 const defaultWalletContextValue = {
   wallet: {
     account: { address: '', evmAddress: '' },
-    config: { network: { id: '' } },
+    config: { network: '' },
   } as WalletSnapState,
   setWallet: () => {},
 } as WalletContextContent;
 
-export const WalletContext = createContext<WalletContextContent>(
-  defaultWalletContextValue,
-);
+export const WalletContext = createContext<WalletContextContent>(defaultWalletContextValue);
 
 export const useWalletContext = () => useContext(WalletContext);

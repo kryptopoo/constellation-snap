@@ -3,16 +3,7 @@ import QRCode from 'react-qr-code';
 
 export const ReceiveModal = ({ opened, close, address }: { opened: boolean; close: () => void; address: string }) => {
   return (
-    <Modal
-      opened={opened}
-      onClose={close}
-      title={"Receive"}
-      centered
-      // overlayProps={{
-      //   backgroundOpacity: 0.6,
-      //   blur: 3,
-      // }}
-    >
+    <Modal opened={opened} onClose={close} title={'Receive'} centered>
       <Divider mb="xl"></Divider>
       <Stack align="center" m="md">
         <QRCode value={address} />

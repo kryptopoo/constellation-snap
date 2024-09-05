@@ -1,5 +1,5 @@
 import { Asset } from 'src/types/snap';
-import { Group, Card, Stack, Table, Text, Title, HoverCard, Button } from '@mantine/core';
+import { Group, Card, Stack, Table, Text, Title, Button } from '@mantine/core';
 import { SendModal } from './SendModal';
 import { useDisclosure } from '@mantine/hooks';
 import { useState } from 'react';

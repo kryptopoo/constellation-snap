@@ -32,7 +32,6 @@ const Index = () => {
           },
         })) as Balance;
 
-        console.log('loadBalanceAndAssets', snapRes);
         setBalance(snapRes.balance);
         setBalanceUsd(snapRes.balanceUsd);
         setAssets(snapRes.assets);
@@ -67,18 +66,16 @@ const Index = () => {
   useEffect(() => {
     if (onboardDone && isMetaMaskReady && installedSnap) {
       setInterval(() => {
-        console.log('interval loadBalanceAndAssets');
         loadBalanceAndAssets();
       }, 4000);
     }
-  }, ['']);
+  }, []);
 
   // useEffect(() => {
   //   const walletStore = getLocalStorage('wallet');
   //   if (isMetaMaskReady && installedSnap) {
   //     if (!walletStore) {
   //       invokeSnap({ method: 'getWallet' }).then((wallet) => {
-  //         console.log('invokeSnap getWallet', wallet);
 
   //         if (wallet) {
   //           setLocalStorage('wallet', JSON.stringify(wallet));
@@ -86,18 +83,8 @@ const Index = () => {
   //         }
   //       });
   //     } else {
-  //       console.log('setWallet walletStore', walletStore);
   //       setWallet(JSON.parse(walletStore) as WalletSnapState);
   //     }
-  //   }
-  // }, [isMetaMaskReady, installedSnap]);
-
-  // useEffect(() => {
-  //   const walletStore = getLocalStorage('wallet');
-  //   if (isMetaMaskReady && installedSnap && walletStore) {
-  //     setWallet(JSON.parse(walletStore) as WalletSnapState);
-
-  //     loadBalanceAndAssets();
   //   }
   // }, [isMetaMaskReady, installedSnap]);
 
@@ -107,29 +94,6 @@ const Index = () => {
       setWallet(wallet as WalletSnapState);
     }
   }, [wallet]);
-
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     const walletStore = getLocalStorage('wallet');
-  //     if (!walletStore) {
-  //       console.log('invokeSnap getWallet');
-  //       invokeSnap({ method: 'getWallet' }).then((wallet) => {
-  //         setWallet(wallet as WalletSnapState);
-  //         setLocalStorage('wallet', JSON.stringify(wallet));
-
-  //         console.log('setWallet', wallet);
-  //       });
-  //     } else {
-  //       console.log('setWallet walletStore');
-  //       setWallet(JSON.parse(walletStore) as WalletSnapState);
-  //     }
-  //     console.log('walletStore', walletStore);
-  //   }, 10000);
-  // }, []);
-
-  // useEffect(() => {
-  //   setLocalStorage('wallet', JSON.stringify(wallet));
-  // }, [wallet]);
 
   const [onboardModalOpened, { open: openOnboardModal, close: closeOnboardModal }] = useDisclosure(false);
   useEffect(() => {
@@ -144,9 +108,6 @@ const Index = () => {
         overlayProps={{ radius: 'md', blur: 2 }}
         loaderProps={{ type: 'bars' }}
       />
-{/* 
-      <Button onClick={() => requestSnap()}>Reconnect</Button>
-      <Button onClick={() => loadBalanceAndAssets()}>Balance</Button> */}
 
       <OnboardingModal
         opened={onboardModalOpened}

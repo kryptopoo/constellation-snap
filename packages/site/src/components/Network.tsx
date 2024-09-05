@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import { Menu, Button, Text, rem } from '@mantine/core';
-import { IconCaretDown, IconChevronDown } from '@tabler/icons-react';
-import { useInvokeSnap, useWalletContext } from '../hooks';
+import { Menu, Button, Text, rem, Divider } from '@mantine/core';
+import { IconCaretDown, IconChevronDown, IconPlugConnected } from '@tabler/icons-react';
+import { useInvokeSnap, useWalletContext, useRequestSnap } from '../hooks';
 import { WalletSnapState } from '../types/snap';
 import { setLocalStorage } from '../utils';
 
@@ -9,6 +9,7 @@ export const Network = () => {
   const [networkName, setNetworkName] = useState<string | undefined>('integrationnet');
   const { wallet, setWallet } = useWalletContext();
   const invokeSnap = useInvokeSnap();
+  const requestSnap = useRequestSnap();
 
   const changeNetwork = async (network: string) => {
     const wallet = (await invokeSnap({
@@ -18,7 +19,6 @@ export const Network = () => {
       },
     })) as WalletSnapState;
 
-    console.log('wallet', wallet);
     setNetworkName(wallet.config.network);
 
     setLocalStorage('wallet', JSON.stringify(wallet));
@@ -46,6 +46,12 @@ export const Network = () => {
         <Menu.Item onClick={() => changeNetwork('Mainnet')}>Mainnet</Menu.Item>
         <Menu.Item onClick={() => changeNetwork('IntegrationNet')}>IntegrationNet</Menu.Item>
         <Menu.Item onClick={() => changeNetwork('Testnet')}>Testnet</Menu.Item>
+
+        <Divider mt="sm" />
+
+        <Menu.Item leftSection={<IconPlugConnected size={14} />} onClick={() => requestSnap()}>
+          Reconnect
+        </Menu.Item>
       </Menu.Dropdown>
     </Menu>
   );

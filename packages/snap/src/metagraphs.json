@@ -1,0 +1,248 @@
+{
+  "mainnet": [
+    {
+      "metagraphId": "DAG0CyySf35ftDQDQBnd1bdQ9aPyUdacMghpnCuM",
+      "metagraphName": "DOR",
+      "metagraphDescription": "Decentralized service used for the distribution, validation, and incentivization of data produced by the Dor Traffic Miner and other future product offerings",
+      "metagraphSymbol": "DOR",
+      "metagraphIcon": "https://icons-metagraph.s3.amazonaws.com/DOR/dortoken_red.svg",
+      "metagraphSiteUrl": "https://explorer.getdor.com/",
+      "metagraphStakingWalletAddress": null,
+      "metagraphFeesWalletAddress": "DAG0o6WSyvc7XfzujwJB1e25mfyzgXoLYDD6wqnk",
+      "metagraphNodes": {
+        "l0": {
+          "url": "http://dor-metagraph-mainnet-l0-1396659502.us-west-2.elb.amazonaws.com:7000",
+          "nodes": 3
+        },
+        "cl1": {
+          "url": "http://dor-metagraph-mainnet-cl1-1843193940.us-west-2.elb.amazonaws.com:8000",
+          "nodes": 3
+        },
+        "dl1": {
+          "url": "http://dor-metagraph-mainnet-568250314.us-west-2.elb.amazonaws.com:9000",
+          "nodes": 14
+        }
+      }
+    },
+    {
+        "metagraphId": "DAG7ChnhUF7uKgn8tXy45aj4zn9AFuhaZr8VXY43",
+        "metagraphName": "El Paca",
+        "metagraphDescription": "El Paca is a meme-utility token that is used to reward community members that engage in various activities in the network",
+        "metagraphSymbol": "PACA",
+        "metagraphIcon": "https://icons-metagraph.s3.amazonaws.com/PACA/ElPaca_token2x.png",
+        "metagraphSiteUrl": "https://constellationnetwork.medium.com/introducing-the-el-paca-metagraph-ff2b34586918",
+        "metagraphStakingWalletAddress": null,
+        "metagraphFeesWalletAddress": "DAG5VxUBiDx24wZgBwjJ1FeuVP1HHVjz6EzXa3z6",
+        "metagraphNodes": {
+          "l0": {
+            "url": "http://elpaca-l0-2006678808.us-west-1.elb.amazonaws.com:9100",
+            "nodes": 3
+          },
+          "cl1": {
+            "url": "http://elpaca-cl1-1512652691.us-west-1.elb.amazonaws.com:9200",
+            "nodes": 3
+          },
+          "dl1": {
+            "url": "http://elpaca-dl1-550039959.us-west-1.elb.amazonaws.com:9300",
+            "nodes": 3
+          }
+        }
+      }
+  ],
+  "testnet": [
+    {
+      "metagraphId": "DAG8gMagrwoJ4nAMjbGx17WB5D6nqBEPZYChc3zH",
+      "metagraphName": "DOR",
+      "metagraphDescription": "Decentralized service used for the distribution, validation, and incentivization of data produced by the Dor Traffic Miner and other future product offerings",
+      "metagraphSymbol": "DOR",
+      "metagraphIcon": "https://icons-metagraph.s3.amazonaws.com/DOR/dortoken_red.svg",
+      "metagraphSiteUrl": "https://explorer.getdor.com/",
+      "metagraphStakingWalletAddress": null,
+      "metagraphFeesWalletAddress": null,
+      "metagraphNodes": {
+        "l0": {
+          "url": null,
+          "nodes": 0
+        },
+        "cl1": {
+          "url": null,
+          "nodes": 0
+        },
+        "dl1": {
+          "url": null,
+          "nodes": 0
+        }
+      }
+    },
+    {
+      "metagraphId": "DAG5j83gnnxMX1S5ZAZAszU9CRxsqJLxtRmyFPj6",
+      "metagraphName": "Constellation Test Token",
+      "metagraphDescription": "Metagraph used for testing proposes",
+      "metagraphSymbol": "CTT",
+      "metagraphIcon": "https://img.freepik.com/premium-vector/polygon-matic-cryptocurrency-token-symbol-circle-abstract-digital-background-with-pcb-tracks-currency-coin-icon-vector-illustration_337410-1133.jpg?w=2000",
+      "metagraphSiteUrl": null,
+      "metagraphStakingWalletAddress": null,
+      "metagraphFeesWalletAddress": null,
+      "metagraphNodes": {
+        "l0": {
+          "url": null,
+          "nodes": 0
+        },
+        "cl1": {
+          "url": null,
+          "nodes": 0
+        },
+        "dl1": {
+          "url": null,
+          "nodes": 0
+        }
+      }
+    }
+  ],
+  "integrationnet": [
+    {
+      "metagraphId": "DAG1GH7r7RX1Ca7MbuvqUPT37FAtTfGM1WYQ4otZ",
+      "metagraphName": "El Paca",
+      "metagraphDescription": "El Paca is a meme-utility token that is used to community members that engage in various activities in the network",
+      "metagraphSymbol": "PACA",
+      "metagraphIcon": "https://icons-metagraph.s3.amazonaws.com/PACA/ElPaca_token2x.png",
+      "metagraphSiteUrl": "https://constellationnetwork.medium.com/introducing-the-el-paca-metagraph-ff2b34586918",
+      "metagraphStakingWalletAddress": null,
+      "metagraphFeesWalletAddress": null,
+      "metagraphNodes": {
+        "l0": {
+          "url": null,
+          "nodes": 0
+        },
+        "cl1": {
+          "url": null,
+          "nodes": 0
+        },
+        "dl1": {
+          "url": null,
+          "nodes": 0
+        }
+      }
+    },
+    {
+      "metagraphId": "DAG38J1bPMNmF3FJ5bki4pxu5xqkBj6gUdK7qowB",
+      "metagraphName": "Cyberlete",
+      "metagraphDescription": "Cyberlete is a gaming platform that provides gamers, organizers, content creators and game devs the exact tools they need.",
+      "metagraphSymbol": "LEET",
+      "metagraphIcon": "https://stargazer-assets.s3.us-east-2.amazonaws.com/logos/leet.png",
+      "metagraphSiteUrl": "https://cyberlete.net",
+      "metagraphStakingWalletAddress": null,
+      "metagraphFeesWalletAddress": null,
+      "metagraphNodes": {
+        "l0": {
+          "url": null,
+          "nodes": 0
+        },
+        "cl1": {
+          "url": null,
+          "nodes": 0
+        },
+        "dl1": {
+          "url": null,
+          "nodes": 0
+        }
+      }
+    },
+    {
+      "metagraphId": "DAG3spUrLbFXgxhhapFRjLj72P7WV2f4h9f98dXV",
+      "metagraphName": "Intrana",
+      "metagraphDescription": "Intrana Utility Token",
+      "metagraphSymbol": "INT",
+      "metagraphIcon": "https://pbs.twimg.com/profile_images/1712595383535185920/-8NFaAeq_400x400.jpg",
+      "metagraphSiteUrl": "https://intrana.io/",
+      "metagraphStakingWalletAddress": null,
+      "metagraphFeesWalletAddress": null,
+      "metagraphNodes": {
+        "l0": {
+          "url": null,
+          "nodes": 0
+        },
+        "cl1": {
+          "url": null,
+          "nodes": 0
+        },
+        "dl1": {
+          "url": null,
+          "nodes": 0
+        }
+      }
+    },
+    {
+      "metagraphId": "DAG387n6WmUQXfE6zyAd6R5EiYhmgQjWxt2e8NKP",
+      "metagraphName": "National Digifoundry",
+      "metagraphDescription": "National collaboration initiative to foster continuous innovation in the digital asset ecosystem",
+      "metagraphSymbol": "NDT",
+      "metagraphIcon": "https://icons-metagraph.s3.amazonaws.com/NDF/NDT_Token_image.png",
+      "metagraphSiteUrl": "https://www.digifoundry.org/",
+      "metagraphStakingWalletAddress": null,
+      "metagraphFeesWalletAddress": null,
+      "metagraphNodes": {
+        "l0": {
+          "url": null,
+          "nodes": 0
+        },
+        "cl1": {
+          "url": null,
+          "nodes": 0
+        },
+        "dl1": {
+          "url": null,
+          "nodes": 0
+        }
+      }
+    },
+    {
+      "metagraphId": "DAG4dWrdALPQmvF5UBpuXrqdkMHea1H5f7rjb4qY",
+      "metagraphName": "Metagraph Token",
+      "metagraphDescription": "Metagraph used for testing proposes",
+      "metagraphSymbol": "MGT",
+      "metagraphIcon": "https://stargazer-assets.s3.us-east-2.amazonaws.com/logos/dag-default.png",
+      "metagraphSiteUrl": null,
+      "metagraphStakingWalletAddress": null,
+      "metagraphFeesWalletAddress": null,
+      "metagraphNodes": {
+        "l0": {
+          "url": null,
+          "nodes": 0
+        },
+        "cl1": {
+          "url": null,
+          "nodes": 0
+        },
+        "dl1": {
+          "url": null,
+          "nodes": 0
+        }
+      }
+    },
+    {
+      "metagraphId": "DAG5kfY9GoHF1CYaY8tuRJxmB3JSzAEARJEAkA2C",
+      "metagraphName": "DOR",
+      "metagraphDescription": "Decentralized service used for the distribution, validation, and incentivization of data produced by the Dor Traffic Miner and other future product offerings",
+      "metagraphSymbol": "DOR",
+      "metagraphIcon": "https://icons-metagraph.s3.amazonaws.com/DOR/dortoken_red.svg",
+      "metagraphSiteUrl": "https://explorer.getdor.com/",
+      "metagraphStakingWalletAddress": null,
+      "metagraphFeesWalletAddress": null,
+      "metagraphNodes": {
+        "l0": {
+          "url": null,
+          "nodes": 0
+        },
+        "cl1": {
+          "url": null,
+          "nodes": 0
+        },
+        "dl1": {
+          "url": null,
+          "nodes": 0
+        }
+      }
+    }
+  ]
+}
