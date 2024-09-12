@@ -1,13 +1,17 @@
 {
-  "version": "0.1.0",
-  "description": "An example Snap written in TypeScript.",
+  "version": "0.1.1",
+  "description": "Metamask Snap for Constellation Network",
   "proposedName": "Constellation Snap",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kryptopoo/constellation-snap.git"
+  },
   "source": {
-    "shasum": "wVIS5O0Sh5+pjV7vF10cY2jquUu/8Tbfs27ptePtXXE=",
+    "shasum": "ffCDFjqSDO96kXHR/GHrzbRgqL028+u76iJyLs/ttjk=",
     "location": {
       "npm": {
         "filePath": "dist/bundle.js",
-        "packageName": "@constellation/snap",
+        "packageName": "@kryptopoo/constellation-snap",
         "registry": "https://registry.npmjs.org/"
       }
     }

@@ -1,7 +1,15 @@
 {
-  "name": "@constellation/snap",
-  "version": "0.1.0",
+  "name": "@kryptopoo/constellation-snap",
+  "version": "0.1.1",
   "description": "Metamask Snap for Constellation Network",
+  "keywords": [
+    "constellation",
+    "metamask"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kryptopoo/constellation-snap.git"
+  },
   "license": "(MIT-0 OR Apache-2.0)",
   "main": "./dist/bundle.js",
   "files": [
